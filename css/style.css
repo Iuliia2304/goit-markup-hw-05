@@ -517,20 +517,21 @@ min-height: 40px;
 }
 .submit-button{
     display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Roboto", sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: #fff;
-        min-width: 165px;
-        height: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    min-width: 165px;
+    height: 40px;
     background-color: #4d5ae5;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 
 }
 .submit-icon{
@@ -594,9 +595,12 @@ min-height: 40px;
         
 }
 .close-icon{
-fill: #2e2f42;
+   fill: #2e2f42;
+   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-icon:hover,
+.close-icon:hover{
+    fill: #fff
+}
 .close-icon:focus{
     fill: #fff
 }
@@ -616,7 +620,7 @@ fill: #2e2f42;
     color: #2e2f42;
 }
 .modal-form{
-margin-bottom: 8px;
+margin-bottom: 16px;
 }
 .modal-label{
     display:block;
@@ -637,7 +641,7 @@ position: relative;
     border-radius: 4px;
     width: 100%;
     height: 40px;
-    color: transparent;
+    background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -659,7 +663,7 @@ position: relative;
     width:100%;
     height: 120px;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
         border: 1px solid rgba(46, 47, 66, 0.4);
@@ -670,7 +674,7 @@ position: relative;
         resize: none;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus-within .comment-textarea{
+ .modal-input:focus-within .comment-textarea{
     border-color:#4d5ae5;
 }
 .terms{
@@ -705,11 +709,10 @@ position: relative;
 }
  .terms input:checked+label .span-box {
     background-color: #404BBF;
+    fill: #f4f4fd;
     border: none;
  }
- .terms input:checked+label .check-icon {
-     fill: #f4f4fd;
- }
+ 
 .policy{
         line-height: 1.33333;
         text-decoration: underline;
